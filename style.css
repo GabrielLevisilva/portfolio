@@ -6,10 +6,16 @@
 main{
     background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 105px;
+    gap: 90px;
     height: 100vh;
+    
+}
+.linguagens{
+    display: flex;
+    gap: 105px;
 }
 .caixa{
     background-color: rgb(255, 255, 255);
@@ -22,13 +28,45 @@ main{
 #caixa2 > img{
     width: 175px;
 }
-.caixa:hover{
+.caixa:hover {
     transform:scale(1.2);
     border: none;
 }
 #caixa1:hover{
     box-shadow: 1px 2px 12px 10px rgba(255, 68, 0, 0.562);
 }
-#caixa2:hover{
+#caixa1:hover + #texto-html{
+    display: block;
+    box-shadow: 1px 2px 12px 10px rgba(255, 68, 0, 0.562);
+}
+#caixa2:hover {
     box-shadow: 1px 2px 12px 10px rgba(0, 0, 255, 0.349);
+}
+#caixa2:hover + #texto-css{
+    display: block;
+    box-shadow: 1px 2px 12px 10px rgba(0, 0, 255, 0.349);
+}
+.texto-escondido{
+    background-color: lightcoral;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+}
+#texto-html{
+    background-color: orangered;
+}
+#texto-css{
+    background-color: blue;
+}
+#texto{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.164);
+    width: 300px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
