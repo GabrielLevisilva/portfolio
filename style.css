@@ -10,7 +10,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 90px;
-    height: 100vh;
+    height: 95vh;
     
 }
 .linguagens{
@@ -69,4 +69,32 @@ main{
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* BLOCO 2 */
+#bloco2{
+    border-top: solid black 1px;
+    height: 64vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#bloco2 > div{
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+    
+}
+
+/* ANIMAÇÃO */
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
