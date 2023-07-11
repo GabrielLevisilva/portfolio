@@ -20,6 +20,7 @@ nav > a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    scroll-behavior: smooth;
 }
 nav > a:hover{
     color: #436BE1;
@@ -191,6 +192,28 @@ button:hover{
 }
 button:active{
     background-color: #95aef78e;
+}
+#seta{
+    scroll-behavior: smooth;
+    position: absolute;
+    top: 257%;
+    font-size: 2em;
+    left: 95%;
+    text-decoration: none;
+    color: #436BE1;
+    border: solid 1px #baccff ;
+    padding: 5px 10px;
+    border-radius: 0%;
+    transition: 0.5s;
+    
+}
+#seta:hover{
+    color: #95aef7;
+    border-radius: 50%;
+}
+#seta:active{
+    color: rgb(183, 221, 255);
+    transition: 0s;
 }
 /* CONTATO */
 #contato{
