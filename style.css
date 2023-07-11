@@ -168,7 +168,7 @@ nav > a:hover{
     transition: 0.5s;
     border: solid 1px;
 }
-.img > img{
+.img > a > img{
     width: 100%;
     transition: 0.5s;
     cursor: pointer;
