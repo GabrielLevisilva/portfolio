@@ -47,27 +47,31 @@ nav > a:hover{
     font-family: 'Hanken Grotesk', sans-serif;
 }
 #perfil{
-    
     text-align: center;
     width: 30%;
 }
 #perfil > img{
     border-radius: 50%;
-    width: 77%;
-    height: 378px;
+    width: 59%;
 }
 #redes{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: 60px;
     gap: 20%;
     padding-top: 10px;
 }
 #redes > p{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 0.5em;
     transition: 0.5s;
-    cursor: pointer;
 }
-#redes > p:hover{
+#redes > a{
+    width: 60px;
+    margin: auto;
+}
+#redes > a:hover{
     color: #436BE1;
 }
 /* SEÇÃO DE HABILIDADES */
